@@ -1,0 +1,8 @@
+# Ignore compiled distribution files
+dist/
+
+# Ignore all node dependencies
+node_modules/
+
+# Ignore environment variable files
+.env

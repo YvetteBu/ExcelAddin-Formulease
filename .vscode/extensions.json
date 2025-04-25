@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "office-addin.officescript",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}
