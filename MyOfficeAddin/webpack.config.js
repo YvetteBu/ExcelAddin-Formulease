@@ -4,7 +4,6 @@ import Dotenv from "dotenv-webpack";
 import CopyWebpackPlugin from "copy-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "path";
-import devCerts from "./devCerts.js";
 
 const urlDev = "https://localhost:3000/";
 const urlProd = "https://www.contoso.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
@@ -80,13 +79,7 @@ const config = {
         headers: {
             "Access-Control-Allow-Origin": "*"
         },
-        server: {
-            type: "https",
-            options: {
-                key: devCerts.getHttpsServerOptions().key,
-                cert: devCerts.getHttpsServerOptions().cert
-            }
-        },
+        server: "http",
         port: process.env.npm_package_config_dev_server_port || 3000
     }
 };
