@@ -32,8 +32,14 @@
       "command": "npm",
       "args": [
         "run",
+<<<<<<< HEAD
         "start:desktop",
         "--",
+=======
+        "start",
+        "--",
+        "desktop",
+>>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
         "--app",
         "excel"
       ],
@@ -41,10 +47,68 @@
         "clear": true,
         "panel": "dedicated"
       },
+<<<<<<< HEAD
       "problemMatcher": [],
       "dependsOn": [
         "Check And Install Deps"
       ]
+=======
+      "problemMatcher": []
+    },
+    {
+      "label": "Debug: Outlook Desktop",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "start",
+        "--",
+        "desktop",
+        "--app",
+        "outlook"
+      ],
+      "presentation": {
+        "clear": true,
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Debug: PowerPoint Desktop",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "start",
+        "--",
+        "desktop",
+        "--app",
+        "powerpoint"
+      ],
+      "presentation": {
+        "clear": true,
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Debug: Word Desktop",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "start",
+        "--",
+        "desktop",
+        "--app",
+        "word"
+      ],
+      "presentation": {
+        "clear": true,
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+>>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
     },
     {
       "label": "Dev Server",
@@ -103,6 +167,7 @@
         "panel": "dedicated"
       },
       "problemMatcher": []
+<<<<<<< HEAD
     },
     {
       "label": "Check And Install Deps",
@@ -113,6 +178,8 @@
         "panel": "dedicated"
       },
       "problemMatcher": []
+=======
+>>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
     }
   ]
 }
