@@ -1,12 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "dotenv": "^16.5.0",
-    "dotenv-webpack": "^8.1.0"
-  },
-  "devDependencies": {
-    "office-addin-dev-certs": "^2.0.3"
-=======
   "name": "my-office-addin",
   "version": "1.0.0",
   "description": "Office Add-in",
@@ -24,7 +16,9 @@
     "firebase-admin": "^13.3.0",
     "firebase-functions": "^6.3.2",
     "office-addin-manifest": "^1.12.1",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.0.0",
+    "dotenv": "^16.5.0",
+    "dotenv-webpack": "^8.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
@@ -38,7 +32,7 @@
     "regenerator-runtime": "^0.14.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
->>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
+    "webpack-dev-server": "^4.11.1",
+    "office-addin-dev-certs": "^2.0.3"
   }
 }

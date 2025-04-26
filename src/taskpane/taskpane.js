@@ -1,4 +1,5 @@
 'use strict';
+const API_URL = "https://streamendpoint-dcoitccf5q-uc.a.run.app";
 import firebaseAuth from "../firebase.js";
 
 if (typeof window !== "undefined") {
@@ -35,7 +36,6 @@ if (typeof window !== "undefined") {
         const userIntent = document.getElementById("nl-input").value.trim();
         const recommendationElement = document.getElementById("recommendation");
         recommendationElement.innerHTML = "Analyzing preview of sheet and generating formula...";
-        console.log("testing...");
         if (!userIntent) {
           recommendationElement.innerHTML = "Please enter your intention.";
           return;
@@ -82,13 +82,11 @@ if (typeof window !== "undefined") {
         - DO NOT reference headers in formulas.
         - Ensure the formula is compatible with common Excel versions.
         `;
-        console.log("testing.2..")
 
         let response;
         try {
-          console.log("newfetch...")
 
-          response = await fetch("https://streamendpoint-dcoitccf5q-uc.a.run.app", {
+          response = await fetch(API_URL, {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
@@ -221,7 +219,10 @@ if (typeof window !== "undefined") {
 
       // Store user info in localStorage
       localStorage.setItem("userEmail", email);
-      localStorage.setItem("userProfile", JSON.stringify(data.profile));
+      localStorage.setItem("userProfile", JSON.stringify({
+        name: data.displayName || "",
+        email: data.email
+      }));
       
       // Update UI
       updateUserInfo(data.profile);
@@ -283,9 +284,9 @@ if (typeof window !== "undefined") {
         // Store user info in localStorage
         localStorage.setItem("userEmail", email);
         localStorage.setItem("userProfile", JSON.stringify({ 
-            name, 
-            email,
-            credits: 20 // Initial credits
+            name: name, 
+            email: email,
+            credits: 20
         }));
         
         // Update UI
