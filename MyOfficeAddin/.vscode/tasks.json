@@ -32,14 +32,9 @@
       "command": "npm",
       "args": [
         "run",
-<<<<<<< HEAD
-        "start:desktop",
-        "--",
-=======
         "start",
         "--",
         "desktop",
->>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
         "--app",
         "excel"
       ],
@@ -47,12 +42,6 @@
         "clear": true,
         "panel": "dedicated"
       },
-<<<<<<< HEAD
-      "problemMatcher": [],
-      "dependsOn": [
-        "Check And Install Deps"
-      ]
-=======
       "problemMatcher": []
     },
     {
@@ -108,7 +97,6 @@
         "panel": "dedicated"
       },
       "problemMatcher": []
->>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
     },
     {
       "label": "Dev Server",
@@ -167,19 +155,6 @@
         "panel": "dedicated"
       },
       "problemMatcher": []
-<<<<<<< HEAD
-    },
-    {
-      "label": "Check And Install Deps",
-      "type": "otk",
-      "command": "otk.check-and-install-deps",
-      "presentation": {
-        "clear": true,
-        "panel": "dedicated"
-      },
-      "problemMatcher": []
-=======
->>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
     }
   ]
 }

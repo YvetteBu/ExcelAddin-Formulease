@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "presets": ["@babel/preset-env"]
-}
-=======
   "presets": [
     ["@babel/preset-env", {
       "targets": {
@@ -12,4 +8,3 @@
     }]
   ]
 }
->>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c

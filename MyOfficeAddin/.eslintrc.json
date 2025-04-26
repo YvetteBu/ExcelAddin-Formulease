@@ -5,13 +5,8 @@
   "extends": [
     "plugin:office-addins/recommended"
   ],
-<<<<<<< HEAD
-  "parserOptions":{
-    "project": null
-=======
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
->>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
   }
 }

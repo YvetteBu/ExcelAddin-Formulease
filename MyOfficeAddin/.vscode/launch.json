@@ -1,15 +1,6 @@
 {
-<<<<<<< HEAD
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-  
-=======
-  "version": "0.2.0",
-  "configurations": [
->>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
     {
       "name": "Excel Desktop (Edge Chromium)",
       "type": "msedge",
@@ -19,11 +10,6 @@
       "webRoot": "${workspaceRoot}",
       "preLaunchTask": "Debug: Excel Desktop",
       "postDebugTask": "Stop Debug"
-<<<<<<< HEAD
-    }
-  ]
-}
-=======
     },
     {
       "name": "Excel Desktop (Edge Legacy)",
@@ -38,4 +24,3 @@
     }
   ]
 }
->>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c

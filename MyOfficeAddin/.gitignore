@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-# Ignore compiled distribution files
-dist/
-
-# Ignore all node dependencies
-node_modules/
-
-# Ignore environment variable files
-.env
-=======
 # Logs
 logs
 *.log
@@ -77,4 +67,3 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
->>>>>>> 74baa12332f4ce0f1802a4114ac9b3379b0d752c
