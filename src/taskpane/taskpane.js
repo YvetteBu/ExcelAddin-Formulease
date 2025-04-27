@@ -1,5 +1,5 @@
 'use strict';
-const API_URL = "https://streamendpoint-dcoitccf5q-uc.a.run.app";
+const API_URL = "https://excel-addin-formulease-rjzjyrndk-yvettebus-projects.vercel.app/api/generate";
 import firebaseAuth from "../firebase.js";
 
 if (typeof window !== "undefined") {
