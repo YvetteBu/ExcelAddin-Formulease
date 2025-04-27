@@ -1,3 +1,4 @@
+import "../taskpane/taskpane.css";
 'use strict';
 const API_URL = "https://excel-addin-formulease-rjzjyrndk-yvettebus-projects.vercel.app/api/generate";
 import firebaseAuth from "../firebase.js";

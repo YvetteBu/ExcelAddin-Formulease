@@ -4,6 +4,7 @@ import Dotenv from "dotenv-webpack";
 import CopyWebpackPlugin from "copy-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "path";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 const urlDev = "https://localhost:3000/";
 const urlProd = "https://excel-addin-formulease-rjzjyrndk-yvettebus-projects.vercel.app/"; // Production deployment URL
@@ -44,6 +45,10 @@ const config = {
                 generator: {
                     filename: "assets/[name][ext][query]"
                 }
+            },
+            {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
             }
         ]
     },
@@ -73,7 +78,10 @@ const config = {
         }),
         new Dotenv({
             systemvars: true
-        })
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css"
+        }),
     ],
     devServer: {
         hot: true,
