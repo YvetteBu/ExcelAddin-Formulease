@@ -1,6 +1,6 @@
 import "../taskpane/taskpane.css";
 'use strict';
-const API_URL = "https://excel-addin-formulease-rjzjyrndk-yvettebus-projects.vercel.app/api/generate";
+const API_URL = "http://localhost:3001/api/gpt";
 import firebaseAuth from "../firebase.js";
 
 if (typeof window !== "undefined") {
