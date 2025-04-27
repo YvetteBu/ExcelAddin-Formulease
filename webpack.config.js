@@ -6,7 +6,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "path";
 
 const urlDev = "https://localhost:3000/";
-const urlProd = "https://www.contoso.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlProd = "https://excel-addin-formulease-rjzjyrndk-yvettebus-projects.vercel.app/"; // Production deployment URL
 
 const config = {
     devtool: "source-map",
@@ -15,7 +15,8 @@ const config = {
         taskpane: "./src/taskpane/taskpane.js"
     },
     output: {
-        clean: true
+        clean: true,
+        publicPath: "/",
     },
     resolve: {
         extensions: [".html", ".js"]
