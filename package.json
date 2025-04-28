@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Office Add-in",
   "scripts": {
-    "start": "webpack serve --mode development",
+    "start": "webpack serve --https --port 3000 --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -88,7 +88,7 @@ const config = {
         headers: {
             "Access-Control-Allow-Origin": "*"
         },
-        server: "http",
+        server: "https",
         port: process.env.npm_package_config_dev_server_port || 3000
     }
 };
