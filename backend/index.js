@@ -15,7 +15,10 @@ const __dirname = path.dirname(__filename);
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: ["https://excel-addin-formulease.vercel.app"],
+  origin: [
+    "https://excel-addin-formulease.vercel.app",
+    "https://excel-addin-formulease-backend.vercel.app"
+  ],
   credentials: true,
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
