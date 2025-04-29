@@ -2,7 +2,7 @@ import "../taskpane/taskpane.css";
 'use strict';
 const API_URL = window.location.hostname.includes('localhost') 
   ? "http://localhost:3001/api/gpt" 
-  : "https://excel-addin-formulease-backend.vercel.app/api/gpt";
+  : "https://excel-addin-formulease-qg51le0sl-yvettebus-projects.vercel.app/api/gpt";
 import firebaseAuth from "../firebase.js";
 
 if (typeof window !== "undefined") {
